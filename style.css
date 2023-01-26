@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    background-color: hsl(217, 54%, 11%);
+    background-size: 100% auto;
+}
+#box{
+
+    width: 375px;
+    background-color: hsl(216, 50%, 16%);
+    margin: 100px auto;
+    border-radius: 15px;
+    align-items: center;
+    padding: 15px;
+}
+
+.imageBox{
+    width: 40%;
+    height: 375px;
+    position: relative;
+
+}
+.image{
+    height: 375px;
+    border-radius: 15px;
+}
+.overlay{
+    position: absolute;
+    width: 375px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius:15px ;
+    transition: opacity 0.4s ease-in-out;
+    background: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+.imageBox:hover .overlay{
+    opacity: 0.8;
+}
+.informationTitle{
+    font-size: 22px;
+    font-family: 'Outfit';
+    color: hsl(0, 0%, 100%);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.informationTitle:hover{
+    color: hsl(178, 100%, 50%);
+}
+.informationParagraph{
+    font-size: 18px;
+    font-family: 'Outfit';
+    color: hsla(0, 4%, 82%, 0.856);
+}
+#valueBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 180px;
+    padding-bottom: 10px;
+}
+.valuePrice{
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    font-family: 'Outfit';
+    color: hsl(178, 100%, 50%);
+
+}
+.valueDate{
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    color: hsla(0, 5%, 75%, 0.856);
+}
+#creator{
+    padding: 20px;
+    padding-right: 100px;
+    border-top: 0.4px solid #FFF2E7;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.imageGit{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: 1px solid hsla(0, 4%, 82%, 0.856);
+    border-radius: 100%;
+}
+.creatorParagraph{
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+    color: hsla(0, 4%, 82%, 0.856);
+    font-size: 16px;
+    font-family: 'Outfit';
+}
+.creatorParagraphA{
+    text-decoration: none;
+    font-weight: bold;
+    color:#FFF2E7;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+.creatorParagraphA:hover{
+    color: hsl(178, 100%, 50%);
+}
